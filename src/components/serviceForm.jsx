@@ -15,7 +15,7 @@ const Form = () => {
     <form className="w-full  space-y-4">
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <Building className="text-yellow-500 font-extrabold" />
+          <Building className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">Building or trade name*</h1>
         </div>
         <div>
@@ -28,7 +28,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <SquareUser className="text-yellow-500 font-extrabold " />
+          <SquareUser className="text-[#ff8901] font-extrabold " />
           <h1 className="text-xl font-bold">Owners full name*</h1>
         </div>
         <div>
@@ -42,7 +42,7 @@ const Form = () => {
       <div className="flex justify-between items-center space-x-2 mb-4">
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <Phone className="text-yellow-500 font-extrabold fill-yellow-500" />
+            <Phone className="text-[#ff8901] font-extrabold fill-yellow-500" />
             <h1 className="text-xl font-bold">Phone number*</h1>
           </div>
           <div>
@@ -55,7 +55,7 @@ const Form = () => {
         </div>
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <Building className="text-yellow-500 font-extrabold " />
+            <Building className="text-[#ff8901] font-extrabold " />
             <h1 className="text-xl font-bold">Email address*</h1>
           </div>
           <div>
@@ -69,7 +69,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <MapPinHouse className="text-yellow-500 font-extrabold" />
+          <MapPinHouse className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">Registered Business Address*</h1>
         </div>
         <div>
@@ -82,7 +82,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <MapPinHouse className="text-yellow-500 font-extrabold" />
+          <MapPinHouse className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">Upload address proof*</h1>
         </div>
         <div>
@@ -97,7 +97,7 @@ const Form = () => {
       <div className="flex justify-between items-center space-x-2 mb-4">
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <Tags className="text-yellow-500 font-extrabold" />
+            <Tags className="text-[#ff8901] font-extrabold" />
             <h1 className="text-xl font-bold">Service Category*</h1>
           </div>
           <div>
@@ -110,7 +110,7 @@ const Form = () => {
         </div>
         <div>
           <div className="flex items-center space-x-2 mb-4">
-            <List className="text-yellow-500 font-extrabold" />
+            <List className="text-[#ff8901] font-extrabold" />
             <h1 className="text-xl font-bold">Sub category*</h1>
           </div>
           <div>
@@ -124,7 +124,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <CardSim className="text-yellow-500 font-extrabold" />
+          <CardSim className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">
             List of services offered with prizing*
           </h1>
@@ -139,7 +139,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <ImageUp className="text-yellow-500 font-extrabold" />
+          <ImageUp className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">Portfolio media upload*</h1>
         </div>
         <div>
@@ -152,7 +152,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <ShieldCheck className="text-yellow-500 font-extrabold" />
+          <ShieldCheck className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">
             Experience Certificates/ Client References*
           </h1>
@@ -167,7 +167,7 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <Phone className="text-yellow-500 font-extrabold  fill-yellow-500" />
+          <Phone className="text-[#ff8901] font-extrabold " />
           <h1 className="text-xl font-bold">Emergency Contact Number*</h1>
         </div>
         <div>
