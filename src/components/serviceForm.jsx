@@ -1,4 +1,14 @@
-import { Building, CardSim, ImageUp, List, MapPinHouse, Phone, ShieldCheck, SquareUser, Tags } from "lucide-react";
+import {
+  Building,
+  CardSim,
+  ImageUp,
+  List,
+  MapPinHouse,
+  Phone,
+  ShieldCheck,
+  SquareUser,
+  Tags,
+} from "lucide-react";
 
 const Form = () => {
   return (
@@ -30,7 +40,7 @@ const Form = () => {
         </div>
       </div>
       <div className="flex justify-between items-center space-x-2 mb-4">
-        <div >
+        <div>
           <div className="flex items-center space-x-2 mb-4">
             <Phone className="text-yellow-500 font-extrabold fill-yellow-500" />
             <h1 className="text-xl font-bold">Phone number*</h1>
@@ -85,7 +95,7 @@ const Form = () => {
         </div>
       </div>
       <div className="flex justify-between items-center space-x-2 mb-4">
-        <div >
+        <div>
           <div className="flex items-center space-x-2 mb-4">
             <Tags className="text-yellow-500 font-extrabold" />
             <h1 className="text-xl font-bold">Service Category*</h1>
@@ -115,7 +125,9 @@ const Form = () => {
       <div>
         <div className="flex items-center space-x-2 mb-4">
           <CardSim className="text-yellow-500 font-extrabold" />
-          <h1 className="text-xl font-bold">List of services offered with prizing*</h1>
+          <h1 className="text-xl font-bold">
+            List of services offered with prizing*
+          </h1>
         </div>
         <div>
           <input
@@ -141,7 +153,9 @@ const Form = () => {
       <div>
         <div className="flex items-center space-x-2 mb-4">
           <ShieldCheck className="text-yellow-500 font-extrabold" />
-          <h1 className="text-xl font-bold">Experience Certificates/ Client References*</h1>
+          <h1 className="text-xl font-bold">
+            Experience Certificates/ Client References*
+          </h1>
         </div>
         <div>
           <input
@@ -164,6 +178,12 @@ const Form = () => {
           />
         </div>
       </div>
+      <input
+        type="checkbox"
+        className="accent-blue-500 w-5 h-5 rounded focus:ring-2 focus:ring-blue-300"
+      /> <label className="text-gray-700">
+        I agree to the terms and conditions and privacy policy.
+        </label>
 
       <button
         type="submit"
