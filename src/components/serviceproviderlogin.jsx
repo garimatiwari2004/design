@@ -10,8 +10,8 @@ const ServiceLogin=()=>{
             <h1 className='text-3xl font-bold'>Service Provider Registration</h1>
             <p className='text-md text-gray-600'>Join our platform and start growing your business today</p>
             <br />
-            <div className='w-full max-w-3xl border-2 flex flex-col items-center justify-center p-6 rounded-lg shadow-lg bg-white'>
-             <Form className=""/>
+            <div className='w-full max-w-5xl border-2 flex flex-col items-center justify-center p-6 rounded-lg shadow-lg'>
+             <Form className="bg-inherit"/>
              </div>
         </div>
 

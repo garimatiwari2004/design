@@ -28,7 +28,7 @@ const Login = () => {
         </button>
         <button
           onClick={() => handleRoleSelection("serviceProvider")}
-          className="bg-yellow-400 rounded-3xl p-2"
+          className="bg-[#ff8901] rounded-3xl p-2"
         >
           I am a service provider
         </button>
