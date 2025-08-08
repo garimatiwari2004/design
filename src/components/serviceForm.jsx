@@ -15,7 +15,7 @@ const Form = () => {
     <form className="w-full  space-y-4">
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <Building className="text-[#ff8901] font-extrabold" />
+          <Building className="text-[#ff8801] font-extrabold" />
           <h1 className="text-xl font-bold">Building or trade name*</h1>
         </div>
         <div>
