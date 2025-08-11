@@ -10,9 +10,10 @@ import {
   SquareUser,
   Tags,
 } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Form = () => {
+  const [isChecked, setIsChecked] = useState(false);
   const ref = useRef(null);
   return (
     <form className="w-full max-w-5xl mx-auto p-6 space-y-4  rounded-lg shadow">
@@ -209,19 +210,32 @@ const Form = () => {
           />
         </div>
       </div>
+      <div className="flex flex-col items-center space-x-2 mb-4">
+        <div>
       <input
         type="checkbox"
+        checked={isChecked}
         className="accent-blue-500 w-5 h-5 rounded focus:ring-2 focus:ring-blue-300"
+         onChange={(e) => setIsChecked(e.target.checked)}
       />{" "}
       <label className="text-gray-700">
         I agree to the terms and conditions and privacy policy.
       </label>
+      </div>
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+        className={`w-[20%] py-2 rounded-md ${
+          isChecked
+          ? "bg-[#ff8901] hover:bg-[#ff8910] text-black"
+          : "bg-gray-400 text-gray-200 cursor-not-allowed"
+        }`}
+       
+
+        disabled={!isChecked}
       >
         Register
       </button>
+      </div>
     </form>
   );
 };

@@ -4,6 +4,4 @@
 @tailwind utilities;
 
 
-body {
-  @apply font-sans;
-}
+@import "@fontsource/inter/variable.css";
