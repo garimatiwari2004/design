@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex justify-between items-center gap-10  mr-16'>
             <nav className='w-full'> 
-                <ul className='flex justify-around gap-9 text-lg font-semibold w-full p-4'>
+                <ul className='flex justify-around gap-9 text-lg font-medium w-full p-4'>
                     <a href="/">Home</a>
                     <a href="/about">About Us</a>  
                     <a href="/contact">Contact</a>

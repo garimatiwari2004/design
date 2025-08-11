@@ -3,5 +3,4 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import "@fontsource/inter/variable.css";
+@import "@fontsource/inter/index.css";

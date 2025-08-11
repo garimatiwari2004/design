@@ -1,6 +1,7 @@
 import {
   Building,
-  CardSim,
+  CircleDollarSign,
+  CircleDollarSignIcon,
   ImageUp,
   List,
   MailOpen,
@@ -11,12 +12,61 @@ import {
   Tags,
 } from "lucide-react";
 import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
 
 const Form = () => {
   const [isChecked, setIsChecked] = useState(false);
   const ref = useRef(null);
+  const navigate=useNavigate();
+  const [buisnessname,setBusinessname]=useState("");
+  const [ownername,setOwnername]=useState("");
+  const [phone,setPhone]=useState("");
+  const [email,setEmail]=useState("");
+  const [address,setAddress]=useState("");
+  const [serviceCategory,setServiceCateogry]=useState("");
+  const [subCategory,setSubCategory]=useState("");
+  const [serviceOffered,setserviceOffered]=useState("");
+  const [pricing,setpricing]=useState("");
+  const [emergencycontact,setemergencycontact]=useState("");
+
+
+  const [errors,setErrors]=useState({});
+  const validate=()=>{
+  const newErrors={};
+  if(!buisnessname.trim()) newErrors.buisnessname("Business Name is required");
+  if(!ownername.trim()) newErrors.ownername("Owner Name is required");
+  if (!/^\d{10}$/.test(phone)) newErrors.phone("Enter valid phone number");
+  if (!/\S+@\S+\.\S+/.test(email)) newErrors.email("Enter valid email");
+  if (!address.trim()) newErrors.address("Address is required");
+  if(!serviceCategory) newErrors.serviceCategory("Select category for service");
+  if(!subCategory) newErrors.subCategory("Sub category is required");
+  if(!serviceOffered.trim()) newErrors.serviceOffered("Enter service names separated by a comma");
+  if(!pricing.trim()||isNaN(pricing)) newErrors.pricing("Enter valid Pricing");
+  if (!/^\d{10}$/.test(emergencycontact)) newErrors.emergencycontact("Enter valid emergency contact number");
+
+  return newErrors
+
+
+  }
+
+  const handleSubmit=(e)=>{
+  e.preventDefault();
+
+  const validationErrors=validate();
+  if(Object.keys(validationErrors).length>0){
+    setErrors=validationErrors;
+    return;
+  }
+  console.log("Form submitted");
+  alert("User registered successfully");
+  navigate("/success")
+}
+
+  
   return (
-    <form className="w-full max-w-5xl mx-auto p-6 space-y-4  rounded-lg shadow">
+    <form onSubmit={handleSubmit} className="w-full max-w-5xl mx-auto p-6 space-y-4  rounded-lg shadow">
       <div>
         <div className="flex items-center space-x-2 mb-4">
           <Building className="text-[#ff8801] font-extrabold" />
@@ -24,6 +74,7 @@ const Form = () => {
         </div>
         <div>
           <input
+            onChange={(e)=>setBusinessname(e.target.value)}
             type="text"
             placeholder="Enter your business name"
             className="w-full border  border-gray-300 rounded-md p-4 "
@@ -39,6 +90,7 @@ const Form = () => {
         <div>
           <input
             type="text"
+            onChange={(e)=>setOwnername(e.target.value)}
             placeholder="Enter your full name"
             className="w-full border border-gray-300 rounded-md p-4"
             required
@@ -48,12 +100,13 @@ const Form = () => {
       <div className="flex justify-between items-center space-x-2 mb-4 ">
         <div className="w-[40%]">
           <div className="flex items-center space-x-2 mb-4">
-            <Phone className="text-[#ff8901] font-extrabold fill-[#ff8901]" />
+            <Phone className="text-[#ff8901] font-extrabold " />
             <h1 className="text-xl font-bold">Phone number*</h1>
           </div>
           <div>
             <input
               type="tel"
+              onChange={(e)=>setPhone(e.target.value)}
               placeholder="Enter your phone number"
               className="w-full p-4 border border-gray-300 rounded-md "
               required
@@ -67,6 +120,7 @@ const Form = () => {
           </div>
           <div>
             <input
+              onChange={(e)=>setEmail(e.target.value)}
               type="email"
               placeholder="your@gmail.com"
               className="w-full p-4 border border-gray-300 rounded-md "
@@ -82,6 +136,7 @@ const Form = () => {
         </div>
         <div>
           <textarea
+            onChange={(e)=>setAddress(e.target.value)}
             type=""
             placeholder="Enter your business address"
             className="w-full p-4 border border-gray-300 rounded-md "
@@ -97,6 +152,7 @@ const Form = () => {
         <div>
           <input
             type="file"
+            
             className=" p-4  w-full border border-gray-300 rounded-md "
             placeholder="Click to upload"
             required
@@ -111,6 +167,7 @@ const Form = () => {
           </div>
           <div>
             <select
+             onChange={(e)=>setServiceCateogry(e.target.value)}
               ref={ref}
               className="w-full p-4 border border-gray-300 rounded-md "
               placeholder="Select a category"
@@ -131,6 +188,7 @@ const Form = () => {
           </div>
           <div>
             <select
+            onChange={(e)=>setSubCategory(e.target.value)}
               ref={ref}
               className="w-full p-4 border border-gray-300 rounded-md "
               
@@ -147,13 +205,14 @@ const Form = () => {
       </div>
       <div>
         <div className="flex items-center space-x-2 mb-4">
-          <CardSim className="text-[#ff8901] font-extrabold" />
+          <CircleDollarSignIcon className="text-[#ff8901] font-extrabold" />
           <h1 className="text-xl font-bold">
             List of services offered with pricing*
           </h1>
         </div>
         <div className="flex space-x-4 mb-4">
           <input
+           onChange={(e)=>setserviceOffered(e.target.value)}
             type="text"
             placeholder="Service offered"
             className="w-[60%] p-4 border border-gray-400 rounded-md "
@@ -161,6 +220,7 @@ const Form = () => {
           />
           <input
             type="text"
+            onChange={(e)=>setpricing(e.target.value)}
             placeholder="Enter pricing"
             className="w-[40%] p-4 border border-gray-400 rounded-md "
             required
@@ -204,6 +264,7 @@ const Form = () => {
         <div>
           <input
           placeholder="Enter emergency contact number"
+          onChange={(e)=>setemergencycontact(e.target.value)}
             type="text"
             className="w-full p-4 border border-gray-400 rounded-md "
             required
