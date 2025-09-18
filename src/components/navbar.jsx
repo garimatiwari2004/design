@@ -3,7 +3,7 @@ import  '../index.css';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between p-2 border-2' >
+    <div className=' bg-white  w-full h-[100px] flex justify-between p-2 border-2 border-b-[#FF8900]' >
         <div className=' flex items-center gap-2 '>
             <img src={unlockdiscounts} alt="logo" className='h-10 w-10'></img>
             <h1 className='text-2xl font-bold'>Unlock Discounts</h1>

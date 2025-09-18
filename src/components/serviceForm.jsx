@@ -82,7 +82,7 @@ const Form = () => {
           onChange={(e) => setBusinessname(e.target.value)}
           type="text"
           placeholder="Enter your business name"
-          className="w-full border border-gray-300 rounded-md p-4"
+          className="w-full border border-gray-300 rounded-md p-4  bg-gray-200"
         />
         {errors.buisnessname && (
           <p className="text-red-500 text-sm">{errors.buisnessname}</p>
@@ -99,7 +99,7 @@ const Form = () => {
           type="text"
           onChange={(e) => setOwnername(e.target.value)}
           placeholder="Enter your full name"
-          className="w-full border border-gray-300 rounded-md p-4"
+          className="w-full border border-gray-300 rounded-md p-4  bg-gray-200"
         />
         {errors.ownername && (
           <p className="text-red-500 text-sm">{errors.ownername}</p>
@@ -117,7 +117,7 @@ const Form = () => {
             type="tel"
             onChange={(e) => setPhone(e.target.value)}
             placeholder="Enter your phone number"
-            className="w-full p-4 border border-gray-300 rounded-md"
+            className="w-full p-4 border border-gray-300 rounded-md  bg-gray-200"
           />
           {errors.phone && (
             <p className="text-red-500 text-sm">{errors.phone}</p>
@@ -133,7 +133,7 @@ const Form = () => {
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             placeholder="your@gmail.com"
-            className="w-full p-4 border border-gray-300 rounded-md"
+            className="w-full p-4 border border-gray-300 rounded-md  bg-gray-200"
           />
           {errors.email && (
             <p className="text-red-500 text-sm">{errors.email}</p>
@@ -150,7 +150,7 @@ const Form = () => {
         <textarea
           onChange={(e) => setAddress(e.target.value)}
           placeholder="Enter your business address"
-          className="w-full p-4 border border-gray-300 rounded-md"
+          className="w-full p-4 border border-gray-300 rounded-md  bg-gray-200"
         />
         {errors.address && (
           <p className="text-red-500 text-sm">{errors.address}</p>
@@ -165,7 +165,7 @@ const Form = () => {
         </div>
         <input
           type="file"
-          className="p-4 w-full border border-gray-300 rounded-md"
+          className="p-4 w-full border border-gray-300 rounded-md  bg-gray-200"
           required
         />
       </div>
@@ -180,7 +180,7 @@ const Form = () => {
           <select
             onChange={(e) => setServiceCateogry(e.target.value)}
             ref={ref}
-            className="w-full p-4 border border-gray-300 rounded-md"
+            className="w-full p-4 border border-gray-300 rounded-md  bg-gray-200"
           >
             <option value="">Select a category</option>
             <option value="a">A</option>
@@ -199,7 +199,7 @@ const Form = () => {
           <select
             onChange={(e) => setSubCategory(e.target.value)}
             ref={ref}
-            className="w-full p-4 border border-gray-300 rounded-md"
+            className="w-full p-4 border border-gray-300 rounded-md  bg-gray-200"
           >
             <option value="">Select a sub category</option>
             <option value="a">A</option>
@@ -224,13 +224,13 @@ const Form = () => {
             onChange={(e) => setserviceOffered(e.target.value)}
             type="text"
             placeholder="Service offered"
-            className="w-[60%] p-4 border border-gray-400 rounded-md"
+            className="w-[60%] p-4 border border-gray-400 rounded-md  bg-gray-200"
           />
           <input
             type="text"
             onChange={(e) => setpricing(e.target.value)}
             placeholder="Enter pricing"
-            className="w-[40%] p-4 border border-gray-400 rounded-md"
+            className="w-[40%] p-4 border border-gray-400 rounded-md  bg-gray-200"
           />
         </div>
         {errors.serviceOffered && (
@@ -249,7 +249,7 @@ const Form = () => {
         </div>
         <input
           type="file"
-          className="w-full p-4 border border-gray-400 rounded-md"
+          className="w-full p-4 border border-gray-400 rounded-md  bg-gray-200"
           required
         />
       </div>
@@ -264,7 +264,7 @@ const Form = () => {
         </div>
         <input
           type="file"
-          className="w-full p-4 border border-gray-400 rounded-md"
+          className="w-full p-4 border border-gray-400 rounded-md  bg-gray-200"
           required
         />
         
@@ -280,7 +280,7 @@ const Form = () => {
           placeholder="Enter emergency contact number"
           onChange={(e) => setemergencycontact(e.target.value)}
           type="text"
-          className="w-full p-4 border border-gray-400 rounded-md"
+          className="w-full p-4 border border-gray-400 rounded-md  bg-gray-200"
         />
         {errors.emergencycontact && (
           <p className="text-red-500 text-sm">{errors.emergencycontact}</p>
@@ -293,7 +293,7 @@ const Form = () => {
           <input
             type="checkbox"
             checked={isChecked}
-            className="accent-blue-500 w-5 h-5 rounded focus:ring-2 focus:ring-blue-300"
+            className="accent-blue-500 w-5 h-5 rounded focus:ring-2 focus:ring-blue-300 bg-gray-400  bg-gray-200"
             onChange={(e) => setIsChecked(e.target.checked)}
           />{" "}
           <label className="text-gray-700">

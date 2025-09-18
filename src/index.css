@@ -4,3 +4,11 @@
 @tailwind utilities;
 
 @import "@fontsource/inter/index.css";
+/* @import "@fontsource/poppins/index.css"; */
+
+
+.heroclass {
+  background-image: 
+  repeating-linear-gradient(0deg, #ccc 0 1px, transparent 1px 100px),
+  repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100px);
+}
