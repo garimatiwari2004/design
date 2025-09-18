@@ -8,7 +8,7 @@ const Login = () => {
   const handleRoleSelection = (role) => {
     setSetselectedRole(role);
     if (role === "customer") {
-      navigate("/customerlogin");
+      navigate("/allservices");
     } else if (role === "serviceProvider") {
       navigate("/serviceproviderlogin");
     }
