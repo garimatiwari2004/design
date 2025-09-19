@@ -15,8 +15,8 @@ const Hero = () => {
       <div className="flex w-full justify-center gap-10 space-x-8  px-20 py-10 flex-wrap"> 
       <div className="flex flex-col  " >
         <div className="flex flex-col  space-y-4 ">
-          <h1 className="md:text-8xl text-3xl sm:text-5xl  text-gray-800 font-extrabold font-poppins tracking-wide opacity-90" style={{ textShadow: "3px 4px 4px rgba(128,128,128,0.8)" }}>One Platform</h1>
-          <h1  className="md:text-8xl text-3xl sm:text-5xl  text-gray-800 font-extrabold font-poppins tracking-wide opacity-90 " style={{ textShadow: "3px 4px 4px rgba(128,128,128,0.8)" }}>All Services</h1>
+          <h1 className="text-8xl  text-gray-800 font-extrabold font-poppins tracking-wide opacity-90" style={{ textShadow: "3px 4px 4px rgba(128,128,128,0.8)" }}>One Platform</h1>
+          <h1  className="text-8xl  text-gray-800 font-extrabold font-poppins tracking-wide opacity-90 " style={{ textShadow: "3px 4px 4px rgba(128,128,128,0.8)" }}>All Services</h1>
         </div>
         <div>
           <p className="text-gray-600 text-semibold mt-9 md:text-xl sm:text-md">
