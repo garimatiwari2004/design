@@ -15,11 +15,11 @@ const Login = () => {
   };
   return (
     <div className=" flex w-full justify-center items-center mt-10">
-      <div className=" bg-pink-50 p-10">
+      <div className=" bg-pink-50 p-10 rounded-xl">
       <div className="flex flex-col items-center gap-4">
         <h1 className="text-5xl font-bold">Choose Your Role</h1>
         <p className="text-gray-600">
-          Are you looking for services or offering them
+          Are you looking for services or offering them?
         </p>
       </div>
 
