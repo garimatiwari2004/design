@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import imgcollage from "../assets/imgcollage.png";
+import bglanding from "../assets/bglanding.svg";
+
 import "../index.css";
 
 const Hero = () => {
@@ -10,12 +12,13 @@ const Hero = () => {
   };
 
   return (
-    <div className="pt-10 heroclass w-full min-h-screen">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-6 sm:px-10 lg:px-20 py-10">
+    <div className="pt-10 heroclass w-full min-h-screen" style={{ backgroundImage: `url(${bglanding})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+>
+      <div className="flex flex-col-reverse lg:flex-row items-start justify-between gap-10 px-6 sm:px-10 lg:px-20 py-10">
         
         {/* Left Side Text */}
-        <div className="flex flex-col   text-center lg:text-left  ">
-          <div className="space-y-4 ">
+        <div className="flex flex-col    text-center lg:text-left px-10  ">
+          <div className="space-y-4  ">
             <h1
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gray-800  font-extrabold font-poppins tracking-wide opacity-90"
               style={{ textShadow: "3px 4px 4px rgba(128,128,128,0.8)" }}
